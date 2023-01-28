@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -9,7 +7,6 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(player.position.x + 3, player.position.y, transform.position.z);
-        print("player.position.x: " + player.position.x + "player.position.y: " + player.position.y);
+        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
 }
